@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 2</title>
     <style>
-        .container{
+        .container {
             width: 900px;
             margin: 0 auto;
         }
-        
-        .grid{
+        .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-        .grid__element{
+        .grid__element {
             border: 1px solid red;
+            position: relative;
+        }
+        .button-container {
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <p class="container">
+    <div class="container">
         <div class="grid">
-            <a class="grid__element">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis quo natus sed ad autem, consectetur deleniti dolores suscipit repellat, ipsa exercitationem id, quis magnam dolor corporis! <span style="color: blue"><u>Error, nulla voluptatem.</u></span></p>
-            </a>
-            <a class="grid__element">
+            <div class="grid__element">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis quo natus sed ad autem, consectetur deleniti dolores suscipit repellat, ipsa exercitationem id, quis magnam dolor corporis! <span style="color: blue">Error, nulla voluptatem.</span></p>
+            </div>
+            <a href="#" class="grid__element">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis quo natus sed ad autem, consectetur deleniti dolores suscipit repellat, ipsa exercitationem id, quis magnam dolor corporis! </p>
-                <button>Читать дальше</button>
+                
             </a>
+            
         </div>
+    </div>
 </body>
 </html>

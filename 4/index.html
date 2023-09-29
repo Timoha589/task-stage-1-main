@@ -7,14 +7,73 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form action="#" method="post">
             <div>
                 <label for="name">ФИО</label>
-                <input id="name" type="text" placeholder="ФИО" value="">
+                <input id="name" type="text" placeholder="ФИО" value="" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email" value="">
+                <label for="tel">Phone number</label>
+                <input id="tel" type="tel" placeholder="phone number" value="" disabled>
+                <label for="number">Number</label>
+                <input id="number" type="number" placeholder="number" value="" readonly>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="password" value="">
+                <label for="file">File</label>
+                <input id="file" type="file" placeholder="file" value="">
+                <label for="date">Date</label>
+                <input id="date" type="date" placeholder="date" value="">
+                <label for="color">Color</label>
+                <input id="color" type="color" placeholder="color" value="">
+            </div>
+            <div>
+                <label for="blue">Blue
+                    <input id="blue" type="checkbox" name="colors" value="blue">
+                </label>
+                <label for="red">Red
+                    <input id="red" type="checkbox" name="colors" value="red">
+                </label>
+                <label for="green">Green
+                    <input id="green" type="checkbox" name="colors" value="green">
+                </label>
+            </div>
+            <div>
+                <label for="blueRadio">Blue
+                    <input id="blueRadio" type="radio" name="colorsRadio" value="blue">
+                </label>
+                <label for="redRadio">Red
+                    <input id="redRadio" type="radio" name="colorsRadio" value="red">
+                </label>
+                <label for="greenRadio">Green
+                    <input id="greenRadio" type="radio" name="colorsRadio" value="green">
+                </label>
+            </div>
+            <div>
+                <textarea name="text" rows="4" cols="50">Введите текст здесь...</textarea>
+            </div>
+            <div>
+                <select name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="mercedes" selected>Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div>
+                <select name="cars" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="mercedes" selected>Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div>
+                <label for="hiddenInput">Hidden Input</label>
+                <input id="hiddenInput" type="hidden" value="">
             </div>
 
             <!-- по умолчанию type="submit" -->
-            <button>Отправить</button>
+            <button type="submit">Отправить</button>
         </form>
     </div>
 </body>
