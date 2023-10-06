@@ -50,7 +50,62 @@
             font-size: 24px;
             text-decoration: none;
         }
-
+        .grid__media--color1::after{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+        .grid__media--color2::after{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 255, 0.4);
+        }
+        .grid__media--color3::after{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        ::selection {
+            background-color:blueviolet;
+        }
+        ::placeholder {
+            color: red;
+            font-weight: bold;
+        }
+        :disabled {
+            color: red;
+            font-weight: bold;
+        }
+        :read-only {
+            color:black;
+        }
+        .list-links__item:hover{
+            text-decoration: underline;
+        }
+        .list-links__item:link{
+            color: red;
+        }
+        .list-links__item:visited{
+            color: #c9c9c9;
+        }
+        .list-links__item:visited{
+            color:#4CAF50;
+        }
+        .table tr:nth-child(odd){
+            background-color: red;
+        }
     </style>
 
 </head>
